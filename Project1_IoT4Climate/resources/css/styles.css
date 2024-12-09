@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:#f8f8f8;
+    --secundary-color:#354333;
+    --accent-color:#b8deb7;
+    --accent2-color:#555c52;
+}
+
+html {
+    background-color: var(--accent-color);
+}
+body {
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin: auto;
+    width: 90%;
+}
+p {
+    line-height: 1.4em;
+}
+p + p {
+    margin-top: 1em;
+}
+.thick {
+    font-weight: 800;
+}
+
+/* Header Styles */
+header .logo {
+    background-image: url(../images/leaves-background-2023-11-27-05-15-27-utc.jpg);
+    background-size: cover;
+    background-position: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.087);
+    padding: 2em;
+}
+header .logo h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0.1em;
+}
+header .logo p {
+    font-size: 0.8em;
+    text-align: center;
+}
+header nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+header nav ul li {
+    margin: 2em 0.5em;
+}
+header nav ul li a {
+    background-image: linear-gradient(135deg, var(--primary-color) 50%, var(--accent-color) 50.001%);
+    background-size: 240%;
+    background-position: 0% 50%;
+    color: var(--secundary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-position 0.5s;
+}
+header nav ul li a:hover {
+    background-position: 100% 50%;
+}
+nav {
+    padding: 0px 2em;
+}
+
+/* Main Styles */
+section:nth-child(even) {
+    background-color: #e1e1e1;
+    margin: 0px;
+    padding: 4rem;
+}
+section {
+    margin: 4rem;
+}
+h2 {
+    color: var(--accent2-color);
+    font-size: 2.6em;
+    font-weight: 500;
+    margin-bottom: 1.6em;
+    text-align: center;
+}
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+}
+.two-columns {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 4rem;
+}
+.three-columns {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+.three-columns div {
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-mask {
+    border: 3px solid var(--secundary-color);
+    border-radius: 20px;
+    padding: 6px;
+}
+.image-mask img {
+    border-radius: 15px;
+    display: block;
+    width: 100%;
+}
+.info-div {
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.4s;
+}
+.info-div:hover {
+    transform: scale(1.05);
+}
+.info-div img {
+    display: block;
+    margin: 0px auto 2rem auto;
+    width: 6rem;
+}
+.div-accent-1 {
+    background-color: var(--accent2-color);
+    color: var(--primary-color)
+}
+.div-accent-2 {
+    background-color: var(--accent-color);
+}
+
+#energy {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-pixabay-414837.jpg);
+    background-size: cover;
+    color: var(--primary-color);
+    min-height: 80vh;
+}
+#farming {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-blooddrainer-221016.jpg);
+    background-size: cover;
+    color: var(--primary-color);
+}
+#air {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-dariuskrs-2931915.jpg);
+    background-size: cover;
+    color: var(--primary-color);
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#contact .contact-information {
+    padding-right: 30px;
+}
+#contact .contact-information h2 {
+    text-align: end;
+}
+#contact > div:nth-child(2) {
+    padding-left: 34px;
+    border-left: 4px solid var(--secundary-color);
+}
+#contact > div:nth-child(2) h2 {
+    text-align: start;
+}
+#contact h2 {
+    margin-bottom: 1em;
+}
+.contact-information > div {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin: 10px 0px;
+    justify-content: end;
+}
+.contact-information > div i {
+    display: block;
+    text-align: center;
+    width: 1em;
+    margin-left: 20px;
+}
+.contact-information a {
+    text-decoration: none;
+    color: var(--secundary-color);
+    transition: color 0.3s;
+}
+.contact-information a:hover {
+    color: #80b07f;
+}
+form > div {
+    margin: 10px 0px;
+}
+.normal-input {
+    display: grid;
+    grid-template-columns: 60px auto;
+}
+.normal-input > div {
+    background-color: #699968;
+    height: 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.normal-input > input {
+    padding: 10px;
+}
+.normal-input > div i {
+    color: white;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+form > input {
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #699968;
+    transition: background-color 0.3s;
+    border: 0px;
+}
+form > input:hover {
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #71c76f;
+    border: 0px;
+}
+footer {
+    background-color: var(--secundary-color);
+    color: var(--accent-color);
+    padding: 20px;
+}
+footer p {
+    text-align: center;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .three-columns {
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media only screen and (max-width: 900px) {
+    #contact {
+        grid-template-columns: 1fr;
+    }
+}
